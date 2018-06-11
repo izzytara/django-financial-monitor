@@ -1,0 +1,183 @@
+/*Body*/
+
+body{
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    background-color: #6f42c1;
+}
+
+
+footer{
+    height: 8em;
+}
+
+
+
+/*Color Schema*/
+.white {
+    color: white;
+}
+
+
+/*Color Schema*/
+
+.izzy-navy{color: #352d69;}
+.izzy-blue{color: #4dceff;}
+.izzy-grey{color: #e0e4e8;}
+.izzy-grey-dark{color: #909ca8;}
+.izzy-green{color: #50e3c2;}
+.izzy-light{color: #f9fafd;}
+.izzy-red{color:red}
+
+.izzy-bg-navy{background-color: #352d69;}
+.izzy-bg-blue{background-color: #4dceff;}
+.izzy-bg-grey{background-color: #e6e8ea;}
+.izzy-bg-grey-dark{background-color: #909ca8;}
+.izzy-bg-green{background-color: #50e3c2;}
+.izzy-bg-light{background-color: #f9fafd;}
+
+
+/* Font*/
+
+
+
+.izzy-ft-xl{font-size: 68px;}
+.izzy-ft-lg{font-size: 56px;}
+.izzy-ft-md{font-size: 42px;}
+.izzy-ft-sm{font-size: 32px;}
+.izzy-ft-xs{font-size: 20px;}
+
+/* Logo */
+.izzy-logo-lg{
+    color: #4dceff;
+    background-color: #352d69;
+    font-size: 8rem;
+    padding: 3rem;
+    margin: 1rem;
+}
+
+.izzy-logo{
+    color: #352d69;
+    background-color: #4dceff;
+    font-size: 4rem;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.izzy-logo-sm{
+    color: #50e3c2;
+    background-color: #352d69;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.izzy-logo-img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    float: right;
+}
+
+
+
+
+
+/* Buttons */
+
+
+
+.izzy-btn-blue{
+    color: #352d69;
+    background-color: #4dceff;
+    border: none;
+
+}
+
+.izzy-btn-blue:hover{
+    background-color: #e0e4e8;
+}
+.izzy-btn-green{
+    color: #352d69;
+    background-color: #50e3c2;
+    border: none;
+}
+
+.izzy-btn-green:hover{
+    background-color: #e0e4e8;
+}
+
+
+.izzy-btn-grey{
+    color: #f9fafd;
+    background-color: #909ca8;
+    border: none;
+}
+
+.izzy-btn-grey:hover{
+    background-color: #e0e4e8;
+}
+
+
+.izzy-ol-btn-navy{
+    color: #352d69;
+    border: 0.05rem solid #352d69;
+
+}
+
+.izzy-ol-btn-navy:hover{
+    color: #e0e4e8;
+    background-color:#352d69;
+}
+
+.izzy-ol-btn-blue{
+    color: #4dceff;
+    border: 0.05rem solid #4dceff;
+
+}
+
+.izzy-ol-btn-blue:hover{
+    color: #e0e4e8;
+    background-color:#4dceff;
+}
+
+.izzy-ol-btn-green{
+    color: #50e3c2;
+    border: 0.05rem solid #50e3c2;
+
+}
+
+.izzy-ol-btn-green:hover{
+    color: #e0e4e8;
+    background-color:#50e3c2;
+}
+
+.izzy-ol-btn-grey{
+    color: #909ca8;
+    border: 0.05rem solid #909ca8;
+
+}
+
+.izzy-ol-btn-grey:hover{
+    color: #e0e4e8;
+    background-color:#909ca8;
+}
+
+
+/* Widgets */
+.card {
+    border: none;
+}
+.card-footer{
+    border: none;
+}
+.izzy-widget{
+    width: 20rem;
+    height: 20rem;
+}
+
+
+
+
+
+

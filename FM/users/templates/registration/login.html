@@ -1,0 +1,20 @@
+{% extends 'basic_generic.html' %}
+
+{% block content %}
+
+<div class="container mt-5 justify-content-center" style="width: 50%">
+    <h1 class="izzy-navy text-center">Login</h1>
+
+    <form class="" method="post" novalidate class="m-0">
+        {% csrf_token %}
+        {% include 'includes/bs4-form.html' with form=form %}
+        <button type="submit" class="btn izzy-btn-blue float-right">Log In</button>
+    </form>
+    <p>New to this website? <a class="izzy-blue" href="{% url 'signup' %}">Sign up</a><p>
+
+</div>
+
+
+
+
+{% endblock %}

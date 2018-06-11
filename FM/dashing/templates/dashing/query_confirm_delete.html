@@ -1,0 +1,18 @@
+{% extends 'basic_dash.html' %}
+
+{% block dash-content %}
+    <div class="">
+        <h1>Delete Query</h1>
+        <p>Are you sure you want to delete the <strong> Query: {{ query }} </strong>?</p>
+        <form action="" method="post">
+          {% csrf_token %}
+          <input type="submit" action="" value="Yes, delete." />
+        </form>
+    </div>
+
+
+
+
+{% endblock %}
+
+

@@ -1,0 +1,44 @@
+{% extends 'basic_generic.html' %}
+{% load static %}
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+
+{% block content %}
+    <!--Jumbotro-->
+    <div class="container mt-5 ">
+        <div class="jumbotron izzy-bg-light h-100">
+            <div class="row">
+            <div class="col-md-6">
+                <span class="rounded-circle izzy-logo-lg">FM</span>
+            </div>
+            <div class="col-md-6">
+                <h1 class="display-4 izzy-navy">Welcome to Financial Monitor!</h1>
+
+                <p class="lead">This is a beautiful online based real-time  financial monitor Django web application,
+                    more faster!</p>
+                <hr class="my-4">
+                <p class="lead text-center mt-2">
+                    <a class="btn btn-lg izzy-btn-blue float-right" href="{% url 'login' %}" role="button">Let's Start!</a>
+                </p>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--Show case
+    <div class="container">
+        <img class="w-50 h-50" src="{% static 'assets/img/stock.jpg'%}">
+    </div>
+    <div class="container">
+        <img class="w-50 h-50 float-right" src="{% static 'assets/img/showcase.jpeg'%}">
+    </div>
+    -->
+
+
+
+
+{% endblock %}

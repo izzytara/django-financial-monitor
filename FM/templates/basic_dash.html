@@ -1,0 +1,29 @@
+{% extends 'basic_generic.html' %}
+<!-- Sub-nav block -->
+{% block subnav %}
+
+        <nav class="navbar navbar-dark justify-content-center bg-light">
+            <ul class="nav nav-pills">
+                <li class="nav-item active">
+                    <a class="nav-link izzy-navy" href="{% url 'dashing' %}">Dashboard</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link izzy-navy" href="{% url 'querys' %}">Tasks</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link izzy-navy" href="{% url 'task_create' %}">Add New Task</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link izzy-navy" href="{% url 'notifications' %}">Notification</a>
+                </li>
+            </ul>
+        </nav>
+
+
+{% endblock %}
+{% block content %}
+    <div class="container mt-5">
+        {% block dash-content %}{% endblock %}
+    </div>
+{% endblock %}

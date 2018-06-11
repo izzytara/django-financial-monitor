@@ -1,0 +1,17 @@
+{% extends 'basic_dash.html' %}
+
+{% block dash-content %}
+    <div class="">
+        <h1 class="izzy-navy text-center">Create New Task</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            {% include 'includes/bs4-form.html' with form=form %}
+
+            <input class="btn izzy-btn-blue float-right" type="submit" value="Submit">
+
+        </form>
+
+    </div>
+
+
+{% endblock %}

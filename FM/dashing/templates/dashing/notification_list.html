@@ -1,0 +1,38 @@
+{% extends 'basic_dash.html' %}
+
+{% block dash-content %}
+    <div class="">
+        <h1 class="izzy-navy text-center">Notification</h1>
+        <table class="table table-lg table-hover table-striped">
+            <thead class="bg-dark izzy-light">
+                <th>#</th>
+                <th>Time</th>
+                <th>Message</th>
+
+            </thead>
+            <tbody class="izzy-bg-light">
+
+                <tr>
+                    <th scope="row">
+                        <p>1</p>
+                    </th>
+                    <td>2018-6-11 8:00:00</td>
+                    <td>Congratulations! You <a href="#" class="izzy-blue">Query</a> of <a href="#" class="izzy-blue">Task 1</a> is mature!</td>
+                </tr>
+
+                {% for notification in notification_list %}
+                    <tr>
+                        <th scope="row">
+                            <p>{{ notification.id }}</p>
+                        </th>
+                        <td>{{ notification.time_add }}</td>
+                        <td>{{ notification.message }}</td>
+                    </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,98 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Title block for change title -->
+    {% block title %}<title>FM</title>{%  endblock %}
+
+    <!--Bootstrap-->
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+    <!-- Custom CSS -->
+    <link type="text/css" href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+    <link type="text/css" href="{% static 'assets/css/amchart-style.css' %}" rel="stylesheet">
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> <!--second font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+<!--Main Navbar-->
+
+<nav class="navbar navbar-expand-lg navbar-dark izzy-bg-navy">
+    <div class="container container-fluid">
+
+    <a class="navbar-brand" href="#"><span class="izzy-blue">Financial</span>Monitor</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'dashing' %}">Dashboard</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Login</a>
+            </li>
+            <!--
+            <li class="nav-item">
+                <a class="nav-link" href=""><i class="fab fa-github"></i></a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About us</a>
+            </li>
+
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    </div>
+</nav>
+<!-- Sub-nav block -->
+{% block subnav %}
+{% endblock %}
+
+<!-- Main content block -->
+{% block content %}{% endblock %}
+
+    <footer class="fixed-bottom izzy-bg-navy izzy-light">
+        <p class="text-center">&copy;2018</p>
+    </footer>
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+{% block javascript %}{% endblock %}
+</body>
+
+</html>
+
+

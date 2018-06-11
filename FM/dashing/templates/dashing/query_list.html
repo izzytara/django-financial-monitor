@@ -1,0 +1,33 @@
+{% extends 'basic_dash.html' %}
+
+{% block dash-content %}
+    <div class="">
+         <h1 class="izzy-navy text-center">Task list</h1>
+         <table class="table table-sm table-hover table-striped">
+                            <thead class="alert-info">
+                                <th>Task No.</th>
+                                <th>Query</th>
+                                <th>Price Range</th>
+                                <th>Target</th>
+                                <th>Status</th>
+
+                            </thead>
+                            <tbody class="izzy-bg-light">
+
+                            {% for query in query_list %}
+                                <tr>
+                                    <th scope="row">
+                                        {{ query.task.id }}
+                                    </th>
+                                    <td>{{ query.task.currency }}</td>
+                                    <td>( {{ query.price_starts }},   {{ query.price_ends }} )</td>
+                                    <td>{{ query.target_amount }}</td>
+                                    <td>{{ query.status }}</td>
+                                </tr>
+                            {% endfor %}
+
+                            </tbody>
+                        </table>
+
+
+{% endblock %}
